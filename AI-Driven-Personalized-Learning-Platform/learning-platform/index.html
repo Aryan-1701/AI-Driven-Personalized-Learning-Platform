@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Personalized Learning Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="landing-container">
+        <div class="landing-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+            <div class="animated-grid"></div>
+            <div class="floating-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        
+        <!-- Top Navigation with Login/Signup -->
+        <nav class="landing-nav">
+            <div class="nav-brand">
+                <div class="nav-logo">🎓</div>
+                <h2>AI Learning Platform</h2>
+            </div>
+            <div class="auth-buttons">
+                <button class="btn-login" onclick="showAuthPage('login')">Login</button>
+                <button class="btn-signup" onclick="showAuthPage('signup')">Sign Up</button>
+            </div>
+        </nav>
+        
+        <!-- Landing Content -->
+        <div class="landing-content">
+            <div class="landing-hero">
+                <h1 class="hero-title">AI-Driven Personalized Learning Platform</h1>
+                <p class="hero-subtitle">Transform your learning experience with cutting-edge AI technology that adapts to your unique learning style</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary-large" onclick="showAuthPage('signup')">Get Started</button>
+                    <button class="btn-secondary-large" onclick="scrollToFeatures()">Learn More</button>
+                </div>
+            </div>
+            
+            <!-- Features Section -->
+            <section id="features" class="features-section">
+                <h2 class="section-title">Platform Features</h2>
+                <p class="section-description">Discover the powerful features that make learning personalized, efficient, and engaging</p>
+                
+                <div class="features-grid-landing">
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">📊</div>
+                        <h3>Student Progress & Learning-Gap Finder</h3>
+                        <p>Track your academic progress in real-time and identify learning gaps using advanced AI analysis. Get personalized insights into where you excel and where you need improvement.</p>
+                    </div>
+                    
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">⚙️</div>
+                        <h3>Automatic Lesson Difficulty Adjuster</h3>
+                        <p>AI automatically adjusts lesson difficulty based on your performance, ensuring you're always challenged at the optimal level for maximum learning efficiency.</p>
+                    </div>
+                    
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">📈</div>
+                        <h3>Performance Analytics & Insights</h3>
+                        <p>Get comprehensive analytics and AI-generated insights about your learning patterns, strengths, and areas for improvement with detailed visualizations.</p>
+                    </div>
+                    
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">📝</div>
+                        <h3>Personalized Mock Test Creator</h3>
+                        <p>AI generates personalized mock tests tailored to your learning gaps, strengths, and exam requirements, helping you prepare effectively.</p>
+                    </div>
+                    
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">🗺️</div>
+                        <h3>Step-by-Step Study Path Guide</h3>
+                        <p>Follow a personalized, step-by-step study path designed by AI based on your goals, current level, and learning gaps for structured progress.</p>
+                    </div>
+                    
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">📋</div>
+                        <h3>Progress Dashboard</h3>
+                        <p>View comprehensive progress dashboards for both students and teachers to track performance, engagement, and learning outcomes.</p>
+                    </div>
+                    
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">📄</div>
+                        <h3>Automated Report Generator</h3>
+                        <p>Automatically generate comprehensive student performance reports with AI-powered insights and actionable recommendations.</p>
+                    </div>
+                    
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">👥</div>
+                        <h3>Study Matchmaker</h3>
+                        <p>Connect with students who match your learning style, goals, and study preferences for collaborative learning experiences.</p>
+                    </div>
+                    
+                    <div class="feature-card-landing">
+                        <div class="feature-icon-landing">🔒</div>
+                        <h3>Data Privacy Shield</h3>
+                        <p>Your data security and privacy are our top priorities with advanced encryption and compliance with international privacy regulations.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- About Section -->
+            <section class="about-section">
+                <div class="about-content">
+                    <h2>Why Choose Our Platform?</h2>
+                    <div class="about-grid">
+                        <div class="about-item">
+                            <div class="about-icon">🎯</div>
+                            <h3>Personalized Learning</h3>
+                            <p>AI adapts to your learning style and pace, creating a truly personalized educational experience.</p>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-icon">⚡</div>
+                            <h3>Real-Time Adaptation</h3>
+                            <p>Lessons adjust automatically based on your performance, ensuring optimal challenge levels.</p>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-icon">📊</div>
+                            <h3>Data-Driven Insights</h3>
+                            <p>Get actionable insights from comprehensive analytics to improve your learning outcomes.</p>
+                        </div>
+                        <div class="about-item">
+                            <div class="about-icon">🔒</div>
+                            <h3>Secure & Private</h3>
+                            <p>Enterprise-grade security ensures your data is protected with the highest standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Learning?</h2>
+                    <p>Join thousands of students and teachers already using our AI-powered platform</p>
+                    <button class="btn-primary-large" onclick="showAuthPage('signup')">Start Learning Today</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- Login/Signup Page -->
+    <div id="auth-page" class="auth-container hidden">
+        <div class="auth-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="auth-box">
+            <button class="back-to-landing" onclick="showLandingPage()">← Back to Home</button>
+            <div class="auth-header">
+                <div class="logo-container">
+                    <div class="logo-icon">🎓</div>
+                </div>
+                <h1>AI Learning Platform</h1>
+                <p>Personalized Learning Experience</p>
+            </div>
+            
+            <div class="auth-tabs">
+                <button class="tab-btn active" onclick="switchTab('login')">Login</button>
+                <button class="tab-btn" onclick="switchTab('signup')">Sign Up</button>
+            </div>
+            
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form active">
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="login-email">
+                            <span class="label-icon">✉️</span> Email
+                        </label>
+                        <input type="email" id="login-email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">
+                            <span class="label-icon">🔒</span> Password
+                        </label>
+                        <input type="password" id="login-password" required placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span>Login</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Signup Form -->
+            <div id="signup-form" class="auth-form">
+                <form onsubmit="handleSignup(event)">
+                    <div class="form-group">
+                        <label for="signup-name">
+                            <span class="label-icon">👤</span> Full Name
+                        </label>
+                        <input type="text" id="signup-name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">
+                            <span class="label-icon">✉️</span> Email
+                        </label>
+                        <input type="email" id="signup-email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">
+                            <span class="label-icon">🔒</span> Password
+                        </label>
+                        <input type="password" id="signup-password" required placeholder="Create a password">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-type">
+                            <span class="label-icon">🎯</span> I am a
+                        </label>
+                        <select id="user-type" required>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span>Sign Up</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Dashboard (Hidden initially) -->
+    <div id="dashboard" class="dashboard-container hidden">
+        <div class="dashboard-background">
+            <div class="bg-pattern"></div>
+            <div class="animated-grid"></div>
+            <div class="floating-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="nav-logo">🎓</div>
+                <h2>AI Learning Platform</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showModule('home')">Home</a></li>
+                <li><a href="#" onclick="showModule('progress')">Progress & Gaps</a></li>
+                <li><a href="#" onclick="showModule('difficulty')">Difficulty Adjuster</a></li>
+                <li><a href="#" onclick="showModule('analytics')">Analytics</a></li>
+                <li><a href="#" onclick="showModule('mock-test')">Mock Tests</a></li>
+                <li><a href="#" onclick="showModule('study-path')">Study Path</a></li>
+                <li><a href="#" onclick="showModule('dashboard-view')">Dashboard</a></li>
+                <li><a href="#" onclick="showModule('reports')">Reports</a></li>
+                <li><a href="#" onclick="showModule('matchmaker')">Matchmaker</a></li>
+                <li><a href="#" onclick="showModule('privacy')">Privacy</a></li>
+            </ul>
+            <button class="logout-btn" onclick="handleLogout()">Logout</button>
+        </nav>
+        
+        <main class="main-content">
+            <!-- Home Page -->
+            <div id="home-module" class="module-content active">
+                <div class="hero-section">
+                    <h1>Welcome to AI-Driven Personalized Learning Platform</h1>
+                    <p class="subtitle">Transform your learning experience with AI-powered personalization</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card" onclick="showModule('progress')">
+                        <div class="feature-icon">📊</div>
+                        <h3>Student Progress & Learning-Gap Finder</h3>
+                        <p>Track your progress and identify learning gaps with AI analysis</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showModule('difficulty')">
+                        <div class="feature-icon">⚙️</div>
+                        <h3>Automatic Lesson Difficulty Adjuster</h3>
+                        <p>AI automatically adjusts lesson difficulty based on your performance</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showModule('analytics')">
+                        <div class="feature-icon">📈</div>
+                        <h3>Performance Analytics & Insights</h3>
+                        <p>Get detailed analytics and insights about your learning journey</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showModule('mock-test')">
+                        <div class="feature-icon">📝</div>
+                        <h3>Personalized Mock Test Creator</h3>
+                        <p>AI generates personalized mock tests based on your needs</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showModule('study-path')">
+                        <div class="feature-icon">🗺️</div>
+                        <h3>Step-by-Step Study Path Guide</h3>
+                        <p>Follow a personalized study path designed just for you</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showModule('dashboard-view')">
+                        <div class="feature-icon">📋</div>
+                        <h3>Progress Dashboard</h3>
+                        <p>View comprehensive progress dashboards for students and teachers</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showModule('reports')">
+                        <div class="feature-icon">📄</div>
+                        <h3>Automated Report Generator</h3>
+                        <p>Automatically generate detailed student performance reports</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showModule('matchmaker')">
+                        <div class="feature-icon">👥</div>
+                        <h3>Study Matchmaker</h3>
+                        <p>Connect with students who match your learning style and goals</p>
+                    </div>
+                    
+                    <div class="feature-card" onclick="showModule('privacy')">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Data Privacy Shield</h3>
+                        <p>Your data is secure with our advanced privacy protection</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 1: Student Progress & Learning-Gap Finder -->
+            <div id="progress-module" class="module-content">
+                <h1>Student Progress & Learning-Gap Finder</h1>
+                <div class="module-description">
+                    <p>Track your academic progress and identify learning gaps using AI-powered analysis. This module helps you understand where you excel and where you need improvement.</p>
+                </div>
+                
+                <div class="progress-section">
+                    <div class="progress-card">
+                        <h3>Overall Progress</h3>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 75%">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-card">
+                        <h3>Subject-wise Performance</h3>
+                        <div class="subject-list">
+                            <div class="subject-item">
+                                <span>Mathematics</span>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-small" style="width: 85%"></div>
+                                </div>
+                                <span>85%</span>
+                            </div>
+                            <div class="subject-item">
+                                <span>Science</span>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-small" style="width: 70%"></div>
+                                </div>
+                                <span>70%</span>
+                            </div>
+                            <div class="subject-item">
+                                <span>English</span>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-small" style="width: 65%"></div>
+                                </div>
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-card">
+                        <h3>Identified Learning Gaps</h3>
+                        <ul class="gap-list">
+                            <li>Algebra: Quadratic Equations - Needs Review</li>
+                            <li>Physics: Thermodynamics - Requires Practice</li>
+                            <li>Grammar: Complex Sentences - Needs Improvement</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 2: Automatic Lesson Difficulty Adjuster -->
+            <div id="difficulty-module" class="module-content">
+                <h1>Automatic Lesson Difficulty Adjuster</h1>
+                <div class="module-description">
+                    <p>AI automatically adjusts lesson difficulty based on your performance, ensuring optimal learning pace and challenge level.</p>
+                </div>
+                
+                <div class="difficulty-section">
+                    <div class="difficulty-card">
+                        <h3>Current Difficulty Level</h3>
+                        <div class="difficulty-indicator">
+                            <span class="level-badge medium">Medium</span>
+                        </div>
+                        <p>Based on your recent performance, the AI has set your difficulty to Medium level.</p>
+                    </div>
+                    
+                    <div class="difficulty-card">
+                        <h3>Performance Metrics</h3>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <span class="metric-label">Accuracy</span>
+                                <span class="metric-value">78%</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Completion Rate</span>
+                                <span class="metric-value">92%</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Time per Lesson</span>
+                                <span class="metric-value">25 min</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="difficulty-card">
+                        <h3>Recommended Adjustments</h3>
+                        <p>The AI suggests maintaining current difficulty level. Your performance indicates you're at the optimal challenge level.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 3: Automated Performance Analytics & Insight Generator -->
+            <div id="analytics-module" class="module-content">
+                <h1>Automated Performance Analytics & Insight Generator</h1>
+                <div class="module-description">
+                    <p>Get comprehensive analytics and AI-generated insights about your learning patterns, strengths, and areas for improvement.</p>
+                </div>
+                
+                <div class="analytics-section">
+                    <div class="analytics-card">
+                        <h3>Learning Trends</h3>
+                        <div class="chart-placeholder">
+                            <p>📊 Performance Trend Chart</p>
+                            <p>Your performance has improved by 15% over the last month</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <h3>AI-Generated Insights</h3>
+                        <div class="insights-list">
+                            <div class="insight-item positive">
+                                <strong>✅ Strength:</strong> You excel at problem-solving tasks
+                            </div>
+                            <div class="insight-item neutral">
+                                <strong>📊 Pattern:</strong> You perform better in morning sessions
+                            </div>
+                            <div class="insight-item warning">
+                                <strong>⚠️ Improvement:</strong> Focus more on conceptual understanding
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-card">
+                        <h3>Performance Breakdown</h3>
+                        <div class="breakdown-grid">
+                            <div class="breakdown-item">
+                                <span>Strong Areas</span>
+                                <ul>
+                                    <li>Mathematics</li>
+                                    <li>Logical Reasoning</li>
+                                </ul>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Areas to Improve</span>
+                                <ul>
+                                    <li>Time Management</li>
+                                    <li>Conceptual Clarity</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 4: AI-Generated Personalized Mock Test Creator -->
+            <div id="mock-test-module" class="module-content">
+                <h1>AI-Generated Personalized Mock Test Creator</h1>
+                <div class="module-description">
+                    <p>Generate personalized mock tests tailored to your learning gaps, strengths, and exam requirements using AI.</p>
+                </div>
+                
+                <div class="mock-test-section">
+                    <div class="test-config-card">
+                        <h3>Create New Mock Test</h3>
+                        <form class="test-form" onsubmit="event.preventDefault(); alert('Mock test generation initiated!');">
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <select>
+                                    <option>Mathematics</option>
+                                    <option>Science</option>
+                                    <option>English</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Difficulty Level</label>
+                                <select>
+                                    <option>Easy</option>
+                                    <option>Medium</option>
+                                    <option>Hard</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Number of Questions</label>
+                                <input type="number" value="20" min="10" max="50">
+                            </div>
+                            <button type="submit" class="btn-primary">Generate Test</button>
+                        </form>
+                    </div>
+                    
+                    <div class="test-list-card">
+                        <h3>Recent Mock Tests</h3>
+                        <div class="test-item">
+                            <div class="test-info">
+                                <h4>Mathematics Mock Test #1</h4>
+                                <p>Completed: 2 days ago | Score: 85/100</p>
+                            </div>
+                            <button class="btn-secondary">View Results</button>
+                        </div>
+                        <div class="test-item">
+                            <div class="test-info">
+                                <h4>Science Mock Test #2</h4>
+                                <p>Completed: 5 days ago | Score: 72/100</p>
+                            </div>
+                            <button class="btn-secondary">View Results</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 5: Step-by-Step Study Path Guide -->
+            <div id="study-path-module" class="module-content">
+                <h1>Step-by-Step Study Path Guide</h1>
+                <div class="module-description">
+                    <p>Follow a personalized, step-by-step study path designed by AI based on your goals, current level, and learning gaps.</p>
+                </div>
+                
+                <div class="study-path-section">
+                    <div class="path-timeline">
+                        <div class="timeline-item completed">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Week 1: Foundation Building</h3>
+                                <p>Review basic concepts in Mathematics and Science</p>
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item active">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Week 2: Intermediate Concepts</h3>
+                                <p>Focus on Algebra and Physics fundamentals</p>
+                                <span class="status-badge active">In Progress</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Week 3: Advanced Topics</h3>
+                                <p>Dive into complex problem-solving and applications</p>
+                                <span class="status-badge pending">Upcoming</span>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Week 4: Practice & Review</h3>
+                                <p>Mock tests and comprehensive review</p>
+                                <span class="status-badge pending">Upcoming</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="path-stats">
+                        <div class="stat-card">
+                            <h3>Progress</h3>
+                            <p class="stat-value">35%</p>
+                            <p>of study path completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Time Remaining</h3>
+                            <p class="stat-value">18 days</p>
+                            <p>to complete current phase</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 6: Student & Teacher Progress Dashboard -->
+            <div id="dashboard-view-module" class="module-content">
+                <h1>Student & Teacher Progress Dashboard</h1>
+                <div class="module-description">
+                    <p>Comprehensive dashboards for both students and teachers to track progress, performance, and engagement.</p>
+                </div>
+                
+                <div class="dashboard-section">
+                    <div class="dashboard-tabs">
+                        <button class="tab-btn active" onclick="switchDashboardTab('student')">Student View</button>
+                        <button class="tab-btn" onclick="switchDashboardTab('teacher')">Teacher View</button>
+                    </div>
+                    
+                    <div id="student-dashboard" class="dashboard-view active">
+                        <div class="dashboard-grid">
+                            <div class="dashboard-card">
+                                <h3>My Progress</h3>
+                                <div class="progress-circle" data-percent="75">75%</div>
+                            </div>
+                            <div class="dashboard-card">
+                                <h3>Lessons Completed</h3>
+                                <p class="big-number">42</p>
+                                <p>out of 56 lessons</p>
+                            </div>
+                            <div class="dashboard-card">
+                                <h3>Average Score</h3>
+                                <p class="big-number">82%</p>
+                                <p>across all subjects</p>
+                            </div>
+                            <div class="dashboard-card">
+                                <h3>Study Streak</h3>
+                                <p class="big-number">12</p>
+                                <p>days in a row</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="teacher-dashboard" class="dashboard-view">
+                        <div class="dashboard-grid">
+                            <div class="dashboard-card">
+                                <h3>Total Students</h3>
+                                <p class="big-number">156</p>
+                                <p>active learners</p>
+                            </div>
+                            <div class="dashboard-card">
+                                <h3>Average Class Performance</h3>
+                                <p class="big-number">78%</p>
+                                <p>overall average</p>
+                            </div>
+                            <div class="dashboard-card">
+                                <h3>Students Needing Attention</h3>
+                                <p class="big-number">23</p>
+                                <p>require support</p>
+                            </div>
+                            <div class="dashboard-card">
+                                <h3>Completion Rate</h3>
+                                <p class="big-number">85%</p>
+                                <p>of assigned lessons</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 7: Automated Student Report Generator -->
+            <div id="reports-module" class="module-content">
+                <h1>Automated Student Report Generator</h1>
+                <div class="module-description">
+                    <p>Automatically generate comprehensive student performance reports with AI-powered insights and recommendations.</p>
+                </div>
+                
+                <div class="reports-section">
+                    <div class="report-actions">
+                        <button class="btn-primary" onclick="generateReport()">Generate New Report</button>
+                        <button class="btn-secondary">Export as PDF</button>
+                    </div>
+                    
+                    <div class="report-preview">
+                        <h3>Sample Report Preview</h3>
+                        <div class="report-content">
+                            <div class="report-section">
+                                <h4>Performance Summary</h4>
+                                <p>Overall Grade: <strong>A-</strong></p>
+                                <p>Total Lessons Completed: <strong>42/56</strong></p>
+                                <p>Average Score: <strong>82%</strong></p>
+                            </div>
+                            
+                            <div class="report-section">
+                                <h4>Subject-wise Breakdown</h4>
+                                <ul>
+                                    <li>Mathematics: 85% (Excellent)</li>
+                                    <li>Science: 78% (Good)</li>
+                                    <li>English: 72% (Satisfactory)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="report-section">
+                                <h4>AI Recommendations</h4>
+                                <ul>
+                                    <li>Focus on improving English grammar skills</li>
+                                    <li>Continue strong performance in Mathematics</li>
+                                    <li>Practice more science experiments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="report-history">
+                        <h3>Report History</h3>
+                        <div class="report-item">
+                            <span>Monthly Report - November 2024</span>
+                            <button class="btn-link">View</button>
+                        </div>
+                        <div class="report-item">
+                            <span>Weekly Report - Week 3</span>
+                            <button class="btn-link">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 8: Student-to-Student Study Matchmaker -->
+            <div id="matchmaker-module" class="module-content">
+                <h1>Student-to-Student Study Matchmaker</h1>
+                <div class="module-description">
+                    <p>Connect with students who match your learning style, goals, and study preferences for collaborative learning.</p>
+                </div>
+                
+                <div class="matchmaker-section">
+                    <div class="match-profile">
+                        <h3>Your Study Profile</h3>
+                        <div class="profile-tags">
+                            <span class="tag">Mathematics Focus</span>
+                            <span class="tag">Morning Learner</span>
+                            <span class="tag">Group Study</span>
+                            <span class="tag">Intermediate Level</span>
+                        </div>
+                    </div>
+                    
+                    <div class="matches-list">
+                        <h3>Recommended Study Partners</h3>
+                        <div class="match-card">
+                            <div class="match-avatar">👤</div>
+                            <div class="match-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Match Score: 92%</p>
+                                <div class="match-tags">
+                                    <span class="tag small">Mathematics</span>
+                                    <span class="tag small">Morning</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Connect</button>
+                        </div>
+                        
+                        <div class="match-card">
+                            <div class="match-avatar">👤</div>
+                            <div class="match-info">
+                                <h4>Michael Chen</h4>
+                                <p>Match Score: 88%</p>
+                                <div class="match-tags">
+                                    <span class="tag small">Science</span>
+                                    <span class="tag small">Group Study</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Connect</button>
+                        </div>
+                        
+                        <div class="match-card">
+                            <div class="match-avatar">👤</div>
+                            <div class="match-info">
+                                <h4>Emily Davis</h4>
+                                <p>Match Score: 85%</p>
+                                <div class="match-tags">
+                                    <span class="tag small">Mathematics</span>
+                                    <span class="tag small">Intermediate</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Module 9: Secure Student Data & Privacy Shield -->
+            <div id="privacy-module" class="module-content">
+                <h1>Secure Student Data & Privacy Shield</h1>
+                <div class="module-description">
+                    <p>Your data security and privacy are our top priorities. Learn about our comprehensive privacy protection measures.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <div class="privacy-card">
+                        <h3>🔒 Data Encryption</h3>
+                        <p>All student data is encrypted using industry-standard AES-256 encryption both in transit and at rest.</p>
+                    </div>
+                    
+                    <div class="privacy-card">
+                        <h3>🛡️ Privacy Controls</h3>
+                        <p>You have full control over your data. View, download, or delete your information at any time.</p>
+                    </div>
+                    
+                    <div class="privacy-card">
+                        <h3>✅ Compliance</h3>
+                        <p>We comply with GDPR, COPPA, and FERPA regulations to ensure your privacy rights are protected.</p>
+                    </div>
+                    
+                    <div class="privacy-card">
+                        <h3>🔐 Access Control</h3>
+                        <p>Multi-factor authentication and role-based access controls ensure only authorized users can access data.</p>
+                    </div>
+                    
+                    <div class="privacy-settings">
+                        <h3>Privacy Settings</h3>
+                        <div class="setting-item">
+                            <label>
+                                <input type="checkbox" checked> Share progress with teachers
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label>
+                                <input type="checkbox" checked> Allow study matchmaking
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <label>
+                                <input type="checkbox"> Share analytics data for platform improvement
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="data-actions">
+                        <button class="btn-secondary">Download My Data</button>
+                        <button class="btn-danger">Request Data Deletion</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
